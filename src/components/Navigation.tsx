@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 const Navigation = () => {
     return(
         <>
@@ -7,10 +8,10 @@ const Navigation = () => {
         
             <p id="audio">audiophile</p>
             <ul className="links">
-                <li>HOME</li>
-                <li>HOME</li>
-                <li>HOME</li>
-                <li>HOME</li>
+                <li><Link to='/'>HOME</Link></li>
+                <li><Link to='/headphones'>HEADPHONES</Link></li>
+                <li><Link to='speakers'>SPEAKERS</Link></li>
+                <li><Link to='earphones'>EARPHONES</Link></li>
             </ul>
 
             <img  src="src\assets\shared\desktop\icon-cart.svg"/>

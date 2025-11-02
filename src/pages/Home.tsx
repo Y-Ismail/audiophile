@@ -12,6 +12,7 @@ function Home(){
     return(
         <>
         <Header />
+        <div className="margin125">
         <Single item='HEADPHONES' img={headphoneimg}/>
         <Single item='SPEAKERS' img={speakerimg}/>
         <Single item='EARPHONES' img={earphoneimg}/>
@@ -19,6 +20,7 @@ function Home(){
         <Zx7 />
         <Yx1 />
         <Bring />
+        </div>
         </>
     )
 }

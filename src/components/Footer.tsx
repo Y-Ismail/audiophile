@@ -20,9 +20,9 @@ function Footer(){
         </div>
         <div>
            <ul id="socials">
-            <li><Link><img src={iconfb} alt="" /></Link></li>
-            <li><Link><img src={icontwtr} alt="" /></Link></li>
-            <li><Link><img src={iconinstg} alt="" /></Link></li>
+            <li><Link to='ter'><img src={iconfb} alt="" /></Link></li>
+            <li><Link to='dds'><img src={icontwtr} alt="" /></Link></li>
+            <li><Link to='ddd'><img src={iconinstg} alt="" /></Link></li>
            </ul>
         </div>
         </footer>

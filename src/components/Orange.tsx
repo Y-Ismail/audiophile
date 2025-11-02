@@ -1,11 +1,12 @@
 import Button from "./Button";
-import zx9 from '../assets/home/mobile/image-speaker-zx9.png'
+import zx9 from '../assets/home/mobile/image-speaker-zx9.png';
 const Orange = () => {
     return <div className="orange">
-        <img src={zx9} alt="zx9"/>
+        <div id="owords">
         <h1 id="zx">ZX9 SPEAKER</h1>
         <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
         <Button variant="black"/>
+        </div>
     </div>
 }
 export default Orange;

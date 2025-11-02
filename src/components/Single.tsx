@@ -1,4 +1,4 @@
-function Single(props){
+function Single(props:any){
     return <div className="singles">
         <img className="pics" src={props.img} alt={props.al}/>
         <h3>{props.item}</h3>
