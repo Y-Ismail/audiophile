@@ -4,7 +4,7 @@ const Navigation = () => {
         <>
         <nav className="top">
 
-            <img id="burger" src="src\assets\shared\tablet\icon-hamburger.svg"/>
+            <img id="burger" src="../assets/shared/tablet/icon-hamburger.svg"/>
         
             <p id="audio">audiophile</p>
             <ul className="links">
@@ -14,7 +14,7 @@ const Navigation = () => {
                 <li><Link to='earphones'>EARPHONES</Link></li>
             </ul>
 
-            <img  src="src\assets\shared\desktop\icon-cart.svg"/>
+            <img  src="../assets/shared/desktop/icon-cart.svg"/>
         </nav>
         </>
     )
