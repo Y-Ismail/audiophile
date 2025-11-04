@@ -1,17 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-:root {
-  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-  
-  background-color: rgba(255, 255, 255, 0.87);
-  color: #242424;
-/* 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */ 
-  
-}
+
 
 
 *{
@@ -23,7 +12,6 @@
 body{
   font-family: "Manrope", sans-serif;
   min-height: 100vh;
-
 }
 
 
@@ -87,11 +75,18 @@ footer{
   background-color: black;
   color: white;
   padding: 20px;
-  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+footer h4{
+  text-align: center;
 }
 a{
   text-decoration: none;
   color: aliceblue;
+}
+a:hover, a:active{
+  color: #D87D4A;
 }
 
 footer ul li{
@@ -105,6 +100,10 @@ footer #socials{
   display: flex;
   justify-content: center;
 }
+
+#socials li{
+  width: 10px;
+}
 footer p{
   opacity: 50%;
   text-align: center;
@@ -116,7 +115,7 @@ footer p{
 }
 button{
   padding: 20px;
-  width: 50%;
+  width: 160px;
 }
 
 img.pics{
@@ -127,8 +126,33 @@ img.pics{
 
 .singles{
   text-align: center;
+
+
+}
+.cover{
+  background-size: cover;
 }
 
+.newporange{
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #D87D4A;
+}
+.xx9product{
+  background-image: url('./assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg');
+}
+.xx9product1{
+  background-image: url('./assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg')
+}
+.xx59product{
+  background-image: url('./assets/product-xx59-headphones/mobile/image-category-page-preview.jpg');
+}
+.dash{
+   height: 352px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
 .orange{
   background-color: #D87D4A;
   background-image: url('./assets/home/desktop/pattern-circles.svg');
@@ -141,12 +165,68 @@ img.pics{
   gap: 40px;
   padding: 40px;
   color: white;
+  justify-content: center;
 }
-
+.pdesc{
+  opacity: 50%;
+  text-align: center;
+  padding: 0 50px;
+  line-height: 25px;
+  font-size: 15px;
+}
 .orange img{
   width: 50%;
 }
 
+#zx{
+  font-size: 80px;
+}
+form{
+  background-color: white;
+  /* margin: 5px 24px; */
+  padding: 10px;
+  border-radius: 10PX;
+}
+input{
+  border-radius: 5px;
+}
+form h3{
+  color: #D87D4A;
+  letter-spacing: 1px;
+}
+.formcontainer{
+  background-color: #F1F1F1;
+  min-height: 100vh;
+  width: 100%;
+  padding: 24px;
+}
+
+.sumary{
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.prodcont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  margin-bottom: 120px;
+}
+.prodcont h1{
+  text-transform: uppercase;
+}
+input{
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+}
+input.raid{
+  width: 5%;
+  padding: 0;
+}
 .zee7{
   background-image: url('assets/home/mobile/image-speaker-zx7.jpg');
   background-size: cover;
@@ -163,6 +243,18 @@ img.pics{
 }
 .yx1{
   background-color: grey;
+}
+#carticon{
+  width: 23px;
+  height: 16px;
+}
+.half{
+  width: 100%;
+  height: 300px;
+}
+.full{
+  width: 100%;
+  height: 300px;
 }
 .yxep{
   background-image: url('assets/home/mobile/image-earphones-yx1.jpg');
@@ -192,11 +284,39 @@ img.pics{
 ul li{
   display: block;
 }
+
+
 .links{
   display: none;
 }
 div.header{
   background-image: url('./assets/home/tablet/image-header.jpg');
+}
+footer{
+  background-color: black;
+  color: white;
+  padding: 40px;
+  display: flex;
+}
+footer ul{
+  display: flex;
+  gap: 3rem;
+
+}
+footer  h4{
+  text-align: left;
+}
+footer ul li{
+  display: block;
+  text-align: center;
+  margin: 20px 0px;
+}
+footer p{
+  text-align: left;
+}
+.tabflex{
+  display: flex;
+  justify-content: space-between;
 }
 }
 
@@ -206,12 +326,56 @@ div.header{
 
 
 @media (min-width:900px){
+footer{
+  display: flex;
+  padding: 50px 125px;
+}
+footer ul{
+  display: flex;
+}
+footer p{
+  text-align: left;
+}
+.deskflex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bodymargin{
+  margin: 0 120px;
+}
+#audtext{
+  width: 50%;
+}
+.tabflex{
+  display: flex;
+  justify-content: space-between;
+}
+.topic{
+  margin: 0 -120px;
+}
+.dash{
+  height: 560px;
+  width: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.xx9product{
+  background-image: url('./assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg');
+}
+.xx9product1{
+  background-image: url('./assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg');
+}
+.xx59product{
+  background-image: url('./assets/product-xx59-headphones/mobile/image-category-page-preview.jpg');
+}
 
 .margin125{
   margin: 0 125px;
 }
 .orange{
-  background-image: url('./assets/home/desktop/image-speaker-zx9.png'),url('./assets/home/desktop/pattern-circles.svg') ;
+  background-image: url('./assets/home/desktop/image-speaker-zx9.png');
   height: 560px;
   background-position: 10% 107%;
   background-size: 30%;
@@ -239,19 +403,26 @@ div.header{
   align-items: flex-start;
   padding-left: 165px;
   text-align: left;
+  margin: 0 -120px;
 }
 div.header div{
   width: 398px;
   height: 346px;
-  outline: 2px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.top{
+  padding-inline: 80px;
+
 }
 
 .top ul{
   display: flex;
   gap: 35px;
+}
+.shop{
+  display: flex;
 }
 
 .bringimg{
@@ -276,4 +447,39 @@ div.header div{
   padding-right: 60px;
   font-size: 40px;
 }
+.zee7{
+  background-image: url('./assets/home/desktop/image-speaker-zx7.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.yflex{
+  display: flex;
+  gap: 30px;
+}
+
+.yxep{
+  width: 50%;
+  background-image: url('./assets/home/desktop/image-earphones-yx1.jpg');
+}
+.x1grey{
+  width: 50%;
+}
+.prodcont{
+  display: flex;
+  flex-direction: row;
+  
+}
+.prodwords{
+  align-items: flex-start;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+}
+.pdesc{
+  padding: 0px;
+  text-align: left;
+}
+
 }
